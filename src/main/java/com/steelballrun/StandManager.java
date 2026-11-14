@@ -37,7 +37,7 @@ public final class StandManager {
 
     public static void removeType(ServerPlayerEntity player) {
         dismiss(player);
-        for (StandType t : StandType.values()) player.removeCommandTag(TAG_PREFIX + t.id);
+        for (StandType t : StandType.values()) player.removeScoreboardTag(TAG_PREFIX + t.id);
     }
 
     public static void copyTags(ServerPlayerEntity from, ServerPlayerEntity to) {
